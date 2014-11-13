@@ -7,14 +7,13 @@
 //
 
 #import "Friend.h"
+#import "Book.h"
+
 
 @implementation Friend
 
-- (instancetype)initWithName:(NSString *)name
-{
-    self = [super init];
-    self.name = name;
-    return self;
-}
+@dynamic name;
+@dynamic photo;
+@dynamic books;
 
 @end

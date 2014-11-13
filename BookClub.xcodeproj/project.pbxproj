@@ -15,10 +15,12 @@
 		FB1E05DF1A14076300401AE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1E05DE1A14076300401AE3 /* Images.xcassets */; };
 		FB1E05E21A14076300401AE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB1E05E01A14076300401AE3 /* LaunchScreen.xib */; };
 		FB1E05EE1A14076300401AE3 /* BookClubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E05ED1A14076300401AE3 /* BookClubTests.m */; };
-		FB1E05F91A1409DC00401AE3 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E05F81A1409DC00401AE3 /* Friend.m */; };
 		FB1E05FD1A140EDF00401AE3 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E05FC1A140EDF00401AE3 /* ReaderViewController.m */; };
 		FB1E06001A14260800401AE3 /* FriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E05FF1A14260800401AE3 /* FriendDetailViewController.m */; };
 		FB1E06031A14281B00401AE3 /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E06021A14281B00401AE3 /* BookDetailViewController.m */; };
+		FB1E06061A1431A200401AE3 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E06051A1431A200401AE3 /* Comment.m */; };
+		FB1E06091A1431A300401AE3 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E06081A1431A300401AE3 /* Book.m */; };
+		FB1E060C1A1431A300401AE3 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E060B1A1431A300401AE3 /* Friend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +48,18 @@
 		FB1E05E71A14076300401AE3 /* BookClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1E05EC1A14076300401AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB1E05ED1A14076300401AE3 /* BookClubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookClubTests.m; sourceTree = "<group>"; };
-		FB1E05F71A1409DC00401AE3 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
-		FB1E05F81A1409DC00401AE3 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		FB1E05FB1A140EDF00401AE3 /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
 		FB1E05FC1A140EDF00401AE3 /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderViewController.m; sourceTree = "<group>"; };
 		FB1E05FE1A14260800401AE3 /* FriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailViewController.h; sourceTree = "<group>"; };
 		FB1E05FF1A14260800401AE3 /* FriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailViewController.m; sourceTree = "<group>"; };
 		FB1E06011A14281B00401AE3 /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
 		FB1E06021A14281B00401AE3 /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
+		FB1E06041A1431A200401AE3 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = ../Comment.h; sourceTree = "<group>"; };
+		FB1E06051A1431A200401AE3 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = ../Comment.m; sourceTree = "<group>"; };
+		FB1E06071A1431A300401AE3 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Book.h; path = ../Book.h; sourceTree = "<group>"; };
+		FB1E06081A1431A300401AE3 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Book.m; path = ../Book.m; sourceTree = "<group>"; };
+		FB1E060A1A1431A300401AE3 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Friend.h; path = ../Friend.h; sourceTree = "<group>"; };
+		FB1E060B1A1431A300401AE3 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Friend.m; path = ../Friend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +150,12 @@
 		FB1E05FA1A1409E000401AE3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FB1E05F71A1409DC00401AE3 /* Friend.h */,
-				FB1E05F81A1409DC00401AE3 /* Friend.m */,
+				FB1E060A1A1431A300401AE3 /* Friend.h */,
+				FB1E060B1A1431A300401AE3 /* Friend.m */,
+				FB1E06071A1431A300401AE3 /* Book.h */,
+				FB1E06081A1431A300401AE3 /* Book.m */,
+				FB1E06041A1431A200401AE3 /* Comment.h */,
+				FB1E06051A1431A200401AE3 /* Comment.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -251,13 +261,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB1E06001A14260800401AE3 /* FriendDetailViewController.m in Sources */,
+				FB1E060C1A1431A300401AE3 /* Friend.m in Sources */,
+				FB1E06091A1431A300401AE3 /* Book.m in Sources */,
 				FB1E05D41A14076300401AE3 /* AppDelegate.m in Sources */,
 				FB1E06031A14281B00401AE3 /* BookDetailViewController.m in Sources */,
-				FB1E05F91A1409DC00401AE3 /* Friend.m in Sources */,
 				FB1E05D71A14076300401AE3 /* BookClub.xcdatamodeld in Sources */,
 				FB1E05FD1A140EDF00401AE3 /* ReaderViewController.m in Sources */,
 				FB1E05DA1A14076300401AE3 /* RootViewController.m in Sources */,
 				FB1E05D11A14076300401AE3 /* main.m in Sources */,
+				FB1E06061A1431A200401AE3 /* Comment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

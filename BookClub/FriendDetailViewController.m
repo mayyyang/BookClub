@@ -19,6 +19,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    UIAlertController *alertcontroller = [UIAlertController alertControllerWithTitle:@"Add an adventurer" message:nil preferredStyle:UIAlertControllerStyleAlert];
+//
+//    [alertcontroller addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+//        textField.placeholder = @"Adventurer Name";
+//    }];
+//
+//    UIAlertAction *okAction = [UIAlertAction
+//                               actionWithTitle:@"Okay"
+//                               style:UIAlertActionStyleDefault
+//                               handler:^(UIAlertAction *action)
+//                               {
+//                                   Adventurer *adventurer = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([Adventurer class]) inManagedObjectContext:self.moc];
+//                                   UITextField *textField = alertcontroller.textFields.firstObject;
+//                                   adventurer.name = textField.text;
+//                                   [self.moc save:nil];
+//                                   [self loadAdventurers];
+//
+//
+//                               }];
+//
+//    [alertcontroller addAction:okAction];
+//
+//    [self presentViewController:alertcontroller animated:YES completion:^{
+//        nil;
+//    }];
 
 }
 
