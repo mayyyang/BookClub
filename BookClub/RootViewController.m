@@ -54,4 +54,11 @@
 
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ReaderViewController *vc = segue.destinationViewController;
+    vc.chosenFriendArray = self.chosenReaderArray;
+
+}
+
 @end

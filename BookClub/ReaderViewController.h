@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ReaderViewController : UIViewController
+@property NSMutableArray *chosenFriendArray;
 
 - (NSString *)chosenReader;
 

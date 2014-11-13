@@ -12,7 +12,6 @@
 @interface ReaderViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property NSArray *readersArray;
-@property id delegate;
 
 
 @end
@@ -37,6 +36,14 @@
 
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    [self.tableView reloadData];
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.readersArray.count;
@@ -44,13 +51,47 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"secondCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"secondCell" forIndexPath:indexPath];
+
+    // Put object at row into reader string, then check if matches in friend string (BOOL method below)
+    NSString *reader = [self.readersArray objectAtIndex:indexPath.row];
+
+
+    BOOL checkMe = [self readerIsFriend:reader];
+    
+    if (checkMe)
+    {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+
+        cell.accessoryType = UITableViewCellAccessoryNone;
+
+    }
+
     cell.textLabel.text = self.readersArray[indexPath.row];
     return cell;
 }
 
+
+-(BOOL)readerIsFriend:(NSString *)reader
+{
+    for(NSString *friend in self.chosenFriendArray)
+    {
+        // check to see if match
+        if([reader isEqualToString:friend]){
+
+            return YES;
+        }
+
+    }
+
+    return NO;
+
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
 
 }
 
