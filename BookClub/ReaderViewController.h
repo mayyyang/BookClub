@@ -10,6 +10,6 @@
 
 @interface ReaderViewController : UIViewController
 
-@property NSString *hoosenrader;
+- (NSString *)chosenReader;
 
 @end

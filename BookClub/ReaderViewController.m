@@ -51,14 +51,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self chosenReader];
+
 }
 
-- (void)chosenReader
+- (NSString *)chosenReader
 {
     NSInteger row = self.tableView.indexPathForSelectedRow.row;
-    self.hoosenrader = self.readersArray[row];
-
+    return self.readersArray[row];
 }
 
 
