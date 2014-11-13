@@ -101,7 +101,7 @@
                                 <rect key="frame" x="0.0" y="284" width="320" height="284"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="ALv-wg-blE">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="friendCell" id="ALv-wg-blE">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ALv-wg-blE" id="14H-RE-QcR">
@@ -112,6 +112,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ps2-1B-Kqg" id="b1z-HN-3Bo"/>
+                                    <outlet property="delegate" destination="ps2-1B-Kqg" id="jtz-iF-haa"/>
+                                </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Be7-27-bSf">
                                 <rect key="frame" x="40" y="121" width="240" height="128"/>
@@ -121,8 +125,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Friend Details" id="TD9-Vx-S16">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="6QJ-ZZ-x0k"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="6QJ-ZZ-x0k">
+                            <connections>
+                                <action selector="onButtonSuggestPressed:" destination="ps2-1B-Kqg" id="Mmc-le-dkX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="friendLabel" destination="BUw-h6-3GC" id="SzG-4l-R6a"/>
+                        <outlet property="imageView" destination="Be7-27-bSf" id="zoK-xz-gkl"/>
+                        <outlet property="tableView" destination="euY-em-9xK" id="FON-L9-WFO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwD-AT-Cjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,7 +169,7 @@
                                 <rect key="frame" x="0.0" y="284" width="320" height="284"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zmM-P2-sRQ">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookCell" id="zmM-P2-sRQ">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zmM-P2-sRQ" id="MhA-F2-U7t">
@@ -164,13 +177,26 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5pm-tv-lms" id="dHu-Fc-Wak"/>
+                                    <outlet property="delegate" destination="5pm-tv-lms" id="Han-WS-Ij6"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Book Details" id="uLr-jj-jQ6">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="GFN-qd-DBC"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="GFN-qd-DBC">
+                            <connections>
+                                <action selector="onButtonCommentPressed:" destination="5pm-tv-lms" id="uLA-3u-Wdd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="authorLabel" destination="TZT-bn-q9t" id="WeT-WF-c1B"/>
+                        <outlet property="tableView" destination="7jH-aE-htV" id="diV-QV-lOt"/>
+                        <outlet property="titleLabel" destination="wbk-QF-GVT" id="rmA-Z4-B8D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qN-le-ff6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
