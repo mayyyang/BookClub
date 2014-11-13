@@ -12,7 +12,6 @@
 
 
 @interface RootViewController () <UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -22,14 +21,6 @@
 {
     [super viewDidLoad];
 
-    // Creating initial friends
-    Friend *friendOne = [[Friend alloc]initWithName:@"Billy Bob"];
-    Friend *friendTwo = [[Friend alloc]initWithName:@"Billy Jean"];
-    Friend *friendThree = [[Friend alloc]initWithName:@"Britney"];
-
-    self.friendsArray = [@[friendOne,
-                           friendTwo,
-                           friendThree] mutableCopy];
 
 }
 
@@ -37,27 +28,24 @@
 {
     [super viewWillAppear:animated];
 
-    [self.tableView reloadData];
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.friendsArray.count;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    Friend *friend = self.friendsArray[indexPath.row];
-    cell.textLabel.text = friend.name;
-    return cell;
+    return nil;
 }
 
 - (IBAction)unwindFromReaderViewController:(UIStoryboardSegue *)segue
 {
-    ReaderViewController *readerVC = segue.sourceViewController;
-    NSString *result = readerVC.hoosenrader;
-    
+//    ReaderViewController *readerVC = segue.sourceViewController;
+//    NSString *result = readerVC.hoosenrader;
+
 }
 
 @end

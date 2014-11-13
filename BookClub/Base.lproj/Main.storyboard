@@ -17,41 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xV4-oZ-YYf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="OKC-Xq-Af3">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="apC-4A-znN">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="vXZ-lx-hvc" id="TVW-Ws-3qJ"/>
-                                    </connections>
-                                </searchBar>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="z73-RL-vO9">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" id="Il5-IM-jlk">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z73-RL-vO9" id="FVe-v3-j2b">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Il5-IM-jlk" id="tx4-8k-baH">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="ps2-1B-Kqg" kind="push" id="5nT-Fv-lgX"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="DP2-vM-V9e"/>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="eNc-aj-FCw"/>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="SrF-U3-zLP"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="ZHX-bu-DN7"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xV4-oZ-YYf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="BNL-L7-xoL"/>
-                            <constraint firstItem="xV4-oZ-YYf" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="ZzW-fJ-Ca6"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xV4-oZ-YYf" secondAttribute="bottom" id="bto-kZ-HQU"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xV4-oZ-YYf" secondAttribute="trailing" constant="-16" id="pZH-0C-0FX"/>
+                            <constraint firstItem="OKC-Xq-Af3" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="Rix-QS-MLS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="OKC-Xq-Af3" secondAttribute="bottom" id="aFD-FL-iBt"/>
+                            <constraint firstItem="OKC-Xq-Af3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="bcC-JL-OeC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OKC-Xq-Af3" secondAttribute="trailing" constant="-16" id="xl5-3h-uiK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Friends" id="Hoi-vN-H1k">
@@ -63,14 +52,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="GqB-Gl-B6l" id="Ak0-fm-VPy"/>
-                        <outlet property="tableView" destination="xV4-oZ-YYf" id="ajz-Yj-waF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="GqB-Gl-B6l">
                     <connections>
                         <outlet property="delegate" destination="vXZ-lx-hvc" id="HIi-1f-sEs"/>
-                        <outlet property="searchBar" destination="apC-4A-znN" id="roO-cR-FXR"/>
                         <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="k0v-SP-f4d"/>
                         <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="pCp-JK-ocM"/>
                         <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="PRy-BD-V8C"/>
