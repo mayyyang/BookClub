@@ -11,7 +11,6 @@
 		FB1E05D41A14076300401AE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E05D31A14076300401AE3 /* AppDelegate.m */; };
 		FB1E05D71A14076300401AE3 /* BookClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB1E05D51A14076300401AE3 /* BookClub.xcdatamodeld */; };
 		FB1E05DA1A14076300401AE3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E05D91A14076300401AE3 /* RootViewController.m */; };
-		FB1E05DD1A14076300401AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1E05DB1A14076300401AE3 /* Main.storyboard */; };
 		FB1E05DF1A14076300401AE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1E05DE1A14076300401AE3 /* Images.xcassets */; };
 		FB1E05E21A14076300401AE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB1E05E01A14076300401AE3 /* LaunchScreen.xib */; };
 		FB1E05EE1A14076300401AE3 /* BookClubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1E05ED1A14076300401AE3 /* BookClubTests.m */; };
@@ -42,7 +41,6 @@
 		FB1E05D61A14076300401AE3 /* BookClub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookClub.xcdatamodel; sourceTree = "<group>"; };
 		FB1E05D81A14076300401AE3 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		FB1E05D91A14076300401AE3 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		FB1E05DC1A14076300401AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB1E05DE1A14076300401AE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB1E05E11A14076300401AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FB1E05E71A14076300401AE3 /* BookClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +109,6 @@
 				FB1E05FF1A14260800401AE3 /* FriendDetailViewController.m */,
 				FB1E06011A14281B00401AE3 /* BookDetailViewController.h */,
 				FB1E06021A14281B00401AE3 /* BookDetailViewController.m */,
-				FB1E05DB1A14076300401AE3 /* Main.storyboard */,
 				FB1E05FA1A1409E000401AE3 /* Model */,
 				FB1E05DE1A14076300401AE3 /* Images.xcassets */,
 				FB1E05E01A14076300401AE3 /* LaunchScreen.xib */,
@@ -240,7 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1E05DD1A14076300401AE3 /* Main.storyboard in Resources */,
 				FB1E05E21A14076300401AE3 /* LaunchScreen.xib in Resources */,
 				FB1E05DF1A14076300401AE3 /* Images.xcassets in Resources */,
 			);
@@ -292,14 +288,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FB1E05DB1A14076300401AE3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB1E05DC1A14076300401AE3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB1E05E01A14076300401AE3 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -460,6 +448,7 @@
 				FB1E05F31A14076300401AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB1E05F41A14076300401AE3 /* Build configuration list for PBXNativeTarget "BookClubTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +457,7 @@
 				FB1E05F61A14076300401AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
